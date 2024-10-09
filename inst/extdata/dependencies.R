@@ -6,5 +6,7 @@ pacman::p_load(
   tidyr,
   tibble,
   stringr,
-  jsonlite
+  janitor,
+  jsonlite,
+  openxlsx
 )
