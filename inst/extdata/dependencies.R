@@ -8,5 +8,16 @@ pacman::p_load(
   stringr,
   janitor,
   jsonlite,
-  openxlsx
+  openxlsx,
+  readr,
+  ggplot2,
+  forcats,
+  logger,
+  glue,
+  scales,
+  lubridate
+  # For database
+  #DBI,
+  #dbplyr,
+  #bigrquery
 )

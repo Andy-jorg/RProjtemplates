@@ -18,15 +18,15 @@ make_project_template <- function(path) {
     stop("You must provide a path for the new project.")
   }
   # create the project
-  usethis::create_project(path, open = FALSE)
+  usethis::create_project(path, open = TRUE)
 
   # create the necessary directories
   dir.create(path, recursive = TRUE, showWarnings = FALSE)
 
   # create the 01_data, 02_script, 03_output structure subdirectories
-  dir.create(file.path(path, "01_data"), recursive = TRUE, showWarnings = FALSE)
-  dir.create(file.path(path, "02_scripts"), recursive = TRUE, showWarnings = FALSE)
-  dir.create(file.path(path, "03_output"), recursive = TRUE, showWarnings = FALSE)
+  dir.create(file.path(path, "01_analysis/01_input"), recursive = TRUE, showWarnings = FALSE)
+  dir.create(file.path(path, "01_analysis/02_scripts"), recursive = TRUE, showWarnings = FALSE)
+  dir.create(file.path(path, "01_analysis/03_output"), recursive = TRUE, showWarnings = FALSE)
 
   # create the _settings folder
   dir.create(file.path(path, "_settings"), recursive = TRUE, showWarnings = FALSE)
