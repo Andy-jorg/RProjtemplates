@@ -17,7 +17,7 @@ make_project_template <- function(path) {
   if (path == "") {
     stop("You must provide a path for the new project.")
   }
-  # create the project
+  # create the project - changing open from FALSE to TRUE
   usethis::create_project(path, open = TRUE)
 
   # create the necessary directories
